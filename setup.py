@@ -23,7 +23,7 @@ with io.open('README.rst', 'r', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 requirements = [
-    'future>=0.15.2',
+    'future>=0.15.2; python_version<"3.4"',
     'binaryornot>=0.2.0',
     'jinja2>=2.7',
     'click>=5.0',
